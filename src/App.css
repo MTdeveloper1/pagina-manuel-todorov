@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Lenguage */
+article {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  background-image: url(https://media.ambito.com/p/f1c3ad936c822ab8b38313a4b00f9f25/adjuntos/239/imagenes/039/076/0039076451/software-programacionjpg.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+article:before {
+content:'';
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+background-color: rgba(0,0,0,0.4);
+}
+.text-container {
+  height: 1000vh;
+  position: absolute;
+}
+.button {
+  text-decoration: none;
+  width: 100px;
+  text-align: center;
+  padding: 15px 25px;
+  font-size: 16px;
+  outline: none;
+  border: 2px solid #ffffff;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  background: linear-gradient(to right,  #ffffff 50%, transparent 50%);
+  background-size: 200%;
+  background-position: right;
+  transition: background-position 0.5s;
+  position: absolute;
+}
+.es {
+  
+}
+.en {
+  
+}
+.button:hover {
+  background-position: left;
+  color: black;
+  font-weight: 700;
+}
+.option {
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  font-size: 50px;
 }
